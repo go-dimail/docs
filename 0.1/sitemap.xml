@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://go-dimail.github.io/docs/0.1/</loc>
+         <lastmod>2026-07-09</lastmod>
+    </url>
+    <url>
+         <loc>https://go-dimail.github.io/docs/0.1/authentication/</loc>
+         <lastmod>2026-07-09</lastmod>
+    </url>
+    <url>
+         <loc>https://go-dimail.github.io/docs/0.1/contributing/</loc>
+         <lastmod>2026-07-09</lastmod>
+    </url>
+    <url>
+         <loc>https://go-dimail.github.io/docs/0.1/errors/</loc>
+         <lastmod>2026-07-09</lastmod>
+    </url>
+    <url>
+         <loc>https://go-dimail.github.io/docs/0.1/generator/</loc>
+         <lastmod>2026-07-09</lastmod>
+    </url>
+    <url>
+         <loc>https://go-dimail.github.io/docs/0.1/usage/</loc>
+         <lastmod>2026-07-09</lastmod>
+    </url>
+</urlset>
