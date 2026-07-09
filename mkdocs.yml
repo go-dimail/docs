@@ -1,0 +1,60 @@
+site_name: go-dimail docs
+site_description: "A pure-Go (CGO-free) client for the Dimail API (La Suite numérique), generated from the API's OpenAPI document."
+site_url: https://go-dimail.github.io/docs/
+repo_url: https://github.com/go-dimail
+repo_name: go-dimail
+edit_uri: ""
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+nav:
+  - Home: index.md
+  - Authentication: authentication.md
+  - Usage: usage.md
+  - Errors: errors.md
+  - Generated from OpenAPI: generator.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
