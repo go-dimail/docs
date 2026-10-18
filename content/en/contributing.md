@@ -1,9 +1,14 @@
-# Contributing
+---
+title: "Contributing"
+weight: 60
+---
+
+# Contributing {#contributing}
 
 go-dimail is BSD-3-Clause. The code lives at
 [github.com/go-dimail/dimail](https://github.com/go-dimail/dimail).
 
-## Ground rules
+## Ground rules {#ground-rules}
 
 - **CGO-free.** No cgo — the package builds and tests on all six supported 64-bit
   targets (`amd64`, `arm64`, `riscv64`, `loong64`, `ppc64le`, `s390x`).
@@ -14,7 +19,7 @@ go-dimail is BSD-3-Clause. The code lives at
   `client_gen.go`, or `client_gen_smoke_test.go`. Change `openapi.json` (or the
   generator in `internal/gen`) and run `go generate ./...`.
 
-## Build & test
+## Build & test {#build-test}
 
 ```sh
 go build ./...

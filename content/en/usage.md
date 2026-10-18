@@ -1,4 +1,9 @@
-# Usage
+---
+title: "Usage"
+weight: 30
+---
+
+# Usage {#usage}
 
 Every API operation is a method on `*dimail.Client`, named after its OpenAPI
 `operationId` (e.g. `GetDomain`, `PostMailboxV2`). Each takes a
@@ -31,7 +36,7 @@ if err != nil {
 fmt.Println("created:", mb.Email)
 ```
 
-## Return shapes
+## Return shapes {#return-shapes}
 
 | Operation kind | Returns |
 | --- | --- |
@@ -41,7 +46,7 @@ fmt.Println("created:", mb.Email)
 | No-content (deletes, some actions) | just `error` |
 | Scalar (a bool/string endpoint) | the value |
 
-## Optional query parameters
+## Optional query parameters {#optional-query-parameters}
 
 Query parameters are pointer arguments; pass `nil` to omit them:
 

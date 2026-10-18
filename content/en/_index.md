@@ -1,4 +1,9 @@
-# go-dimail
+---
+title: "Home"
+weight: 10
+---
+
+# go-dimail {#go-dimail}
 
 A pure-Go (CGO-free) client for the **Dimail API** — the mail-hosting management
 API of the French government's *La Suite numérique* platform
@@ -12,13 +17,13 @@ Everything the API exposes — **91 operations** across users, domains, mailboxe
 self-service views, and the `/system` and `/logs` administration surface — is
 available with concrete Go types (**96** of them).
 
-## Install
+## Install {#install}
 
 ```sh
 go get github.com/go-dimail/dimail
 ```
 
-## Highlights
+## Highlights {#highlights}
 
 - **CGO-free** — the same test binary runs identically on all six supported
   64-bit targets (`amd64`, `arm64`, `riscv64`, `loong64`, `ppc64le`, `s390x`).
@@ -27,12 +32,12 @@ go get github.com/go-dimail/dimail
   if the checked-in generated code drifts from the spec. Regenerate with
   `go generate ./...`.
 
-## Next steps
+## Next steps {#next-steps}
 
-- [Authentication](authentication.md) — Basic → bearer token flow.
-- [Usage](usage.md) — the client, options, and calling operations.
-- [Errors](errors.md) — the typed `APIError`.
-- [Generated from OpenAPI](generator.md) — how the models and methods are built.
+- [Authentication]({{< relref "authentication.md" >}}) — Basic → bearer token flow.
+- [Usage]({{< relref "usage.md" >}}) — the client, options, and calling operations.
+- [Errors]({{< relref "errors.md" >}}) — the typed `APIError`.
+- [Generated from OpenAPI]({{< relref "generator.md" >}}) — how the models and methods are built.
 
 The Ruby-idiomatic face of this client lives in the sibling org
 [go-ruby-dimail](https://github.com/go-ruby-dimail/dimail).
