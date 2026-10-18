@@ -1,4 +1,9 @@
-# Errors
+---
+title: "Errors"
+weight: 40
+---
+
+# Errors {#errors}
 
 Every non-2xx response is returned as an `*dimail.APIError`, which carries the
 status code, the request that produced it, the raw body, and the FastAPI
@@ -16,7 +21,7 @@ if errors.As(err, &apiErr) {
 }
 ```
 
-## Fields and predicates
+## Fields and predicates {#fields-and-predicates}
 
 | Member | Meaning |
 | --- | --- |

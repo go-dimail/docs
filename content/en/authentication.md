@@ -1,4 +1,9 @@
-# Authentication
+---
+title: "Authentication"
+weight: 20
+---
+
+# Authentication {#authentication}
 
 Dimail authenticates with HTTP Basic credentials to mint a **bearer token**, then
 expects that token on every other call. A `Client` sends a bearer token when one
@@ -39,7 +44,7 @@ If you already hold a token, skip `Login`:
 c := dimail.NewClient(dimail.WithToken(os.Getenv("DIMAIL_TOKEN")))
 ```
 
-## Options
+## Options {#options}
 
 `NewClient` accepts functional options:
 

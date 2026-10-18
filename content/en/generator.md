@@ -1,4 +1,9 @@
-# Generated from OpenAPI
+---
+title: "Generated from OpenAPI"
+weight: 50
+---
+
+# Generated from OpenAPI {#generated-from-openapi}
 
 go-dimail is derived from source: the API's OpenAPI 3.1 document is committed at
 the repository root as `openapi.json`, and a small in-tree generator turns it
@@ -22,7 +27,7 @@ The hand-written runtime in `client.go` is **not** generated: it holds the
 `Client`, the Basic→bearer authentication, the HTTP transport, the generic
 response decoders every method funnels through, and the typed `APIError`.
 
-## How the mapping works
+## How the mapping works {#how-the-mapping-works}
 
 - `anyOf[T, null]` → a pointer field (`*T`), distinguishing "absent" from zero.
 - String enums → a named `type X string` with a `const` block.
@@ -31,7 +36,7 @@ response decoders every method funnels through, and the typed `APIError`.
   arguments; request bodies → a pointer to the generated request struct.
 - Responses → `*T` (object), `[]T` (array), a scalar, or just `error` (no content).
 
-## Drift protection
+## Drift protection {#drift-protection}
 
 CI runs `go generate ./...` and fails if the checked-in generated files differ
 from what the committed spec produces — so the generated code can never silently
